@@ -8,7 +8,7 @@
 
 #import "HVAppDelegate.h"
 
-#import "HVMasterViewController.h"
+#import "HVRootViewController.h"
 
 @implementation HVAppDelegate
 
@@ -20,7 +20,7 @@
 {
     // Override point for customization after application launch.
     UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
-    HVMasterViewController *controller = (HVMasterViewController *)navigationController.topViewController;
+    HVRootViewController *controller = (HVRootViewController *)navigationController.topViewController;
     controller.managedObjectContext = self.managedObjectContext;
     return YES;
 }
