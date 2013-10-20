@@ -8,6 +8,7 @@
 
 #import "HVMasterViewController.h"
 #import "FrequentTermModel.h"
+#import "HVAddTermViewController.h"
 
 @implementation HVMasterViewController
 
@@ -45,6 +46,25 @@
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return NO;
+}
+
+- (IBAction)done:(UIStoryboardSegue *)segue
+{
+    if ([[segue identifier] isEqualToString:@"ReturnInput"]) {
+        HVAddTermViewController *addController = [segue sourceViewController];
+        if (addController.frequentTermModel) {
+            [self.dataController addFrequentTermWithTerm:addController.frequentTermModel];
+            [[self tableView] reloadData];
+        }
+        [self dismissViewControllerAnimated:YES completion:NULL];
+    }
+}
+
+- (IBAction)cancel:(UIStoryboardSegue *)segue
+{
+    if ([[segue identifier] isEqualToString:@"CancelInput"]) {
+        [self dismissViewControllerAnimated:YES completion:NULL];
+    }
 }
 
 @end

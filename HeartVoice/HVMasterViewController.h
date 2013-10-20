@@ -14,4 +14,7 @@
 @property (strong, nonatomic) FrequentTermsDataController *dataController;
 @property (nonatomic,strong) NSManagedObjectContext *managedObjectContext;
 
+- (IBAction)done:(UIStoryboardSegue *)segue;
+- (IBAction)cancel:(UIStoryboardSegue *)segue;
+
 @end

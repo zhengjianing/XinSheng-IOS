@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		498E809D1812EA9600A2F06C /* FrequentTermModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 498E809C1812EA9600A2F06C /* FrequentTermModel.m */; };
+		498E80A018138B7E00A2F06C /* HVAddTermViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 498E809F18138B7E00A2F06C /* HVAddTermViewController.m */; };
 		49C0089E180AF1AB0033C16E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49C0089D180AF1AB0033C16E /* UIKit.framework */; };
 		49C008A0180AF1AB0033C16E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49C0089F180AF1AB0033C16E /* Foundation.framework */; };
 		49C008A2180AF1AB0033C16E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49C008A1180AF1AB0033C16E /* CoreGraphics.framework */; };
@@ -19,11 +21,22 @@
 		49C008B6180AF1AB0033C16E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49C008B5180AF1AB0033C16E /* Default-568h@2x.png */; };
 		49C008B9180AF1AB0033C16E /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49C008B7180AF1AB0033C16E /* MainStoryboard.storyboard */; };
 		49C008BC180AF1AB0033C16E /* HeartVoice.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 49C008BA180AF1AB0033C16E /* HeartVoice.xcdatamodeld */; };
-		49C008BF180AF1AB0033C16E /* HVMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C008BE180AF1AB0033C16E /* HVMasterViewController.m */; };
-		49C008C2180AF1AB0033C16E /* HVDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C008C1180AF1AB0033C16E /* HVDetailViewController.m */; };
+		49C008CA180AF24F0033C16E /* HVRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C008C9180AF24F0033C16E /* HVRootViewController.m */; };
+		49C008CC180AF3200033C16E /* iflyMSC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49C008CB180AF3200033C16E /* iflyMSC.framework */; };
+		49C008D2180AF9420033C16E /* FrequentTerm.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C008D1180AF9420033C16E /* FrequentTerm.m */; };
+		49C008D6180AFAD30033C16E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49C008D5180AFAD30033C16E /* QuartzCore.framework */; };
+		49C008D8180AFADB0033C16E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49C008D7180AFADB0033C16E /* SystemConfiguration.framework */; };
+		49C008DA180AFAE50033C16E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49C008D9180AFAE50033C16E /* AudioToolbox.framework */; };
+		49C008DC180AFAEB0033C16E /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49C008DB180AFAEB0033C16E /* AdSupport.framework */; };
+		49C008E2180AFEDC0033C16E /* HVMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C008E1180AFEDC0033C16E /* HVMasterViewController.m */; };
+		49C008EA180C2A9C0033C16E /* FrequentTermsDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C008E9180C2A9C0033C16E /* FrequentTermsDataController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		498E809B1812EA9600A2F06C /* FrequentTermModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrequentTermModel.h; sourceTree = "<group>"; };
+		498E809C1812EA9600A2F06C /* FrequentTermModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrequentTermModel.m; sourceTree = "<group>"; };
+		498E809E18138B7E00A2F06C /* HVAddTermViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HVAddTermViewController.h; path = ../HVAddTermViewController.h; sourceTree = "<group>"; };
+		498E809F18138B7E00A2F06C /* HVAddTermViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HVAddTermViewController.m; path = ../HVAddTermViewController.m; sourceTree = "<group>"; };
 		49C0089A180AF1AB0033C16E /* HeartVoice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeartVoice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49C0089D180AF1AB0033C16E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		49C0089F180AF1AB0033C16E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -40,10 +53,19 @@
 		49C008B5180AF1AB0033C16E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		49C008B8180AF1AB0033C16E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		49C008BB180AF1AB0033C16E /* HeartVoice.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HeartVoice.xcdatamodel; sourceTree = "<group>"; };
-		49C008BD180AF1AB0033C16E /* HVMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HVMasterViewController.h; sourceTree = "<group>"; };
-		49C008BE180AF1AB0033C16E /* HVMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HVMasterViewController.m; sourceTree = "<group>"; };
-		49C008C0180AF1AB0033C16E /* HVDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HVDetailViewController.h; sourceTree = "<group>"; };
-		49C008C1180AF1AB0033C16E /* HVDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HVDetailViewController.m; sourceTree = "<group>"; };
+		49C008C8180AF24F0033C16E /* HVRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HVRootViewController.h; sourceTree = "<group>"; };
+		49C008C9180AF24F0033C16E /* HVRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HVRootViewController.m; sourceTree = "<group>"; };
+		49C008CB180AF3200033C16E /* iflyMSC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iflyMSC.framework; path = "../../../Documents/ios/讯飞 有UI/lib/iflyMSC.framework"; sourceTree = "<group>"; };
+		49C008D0180AF9420033C16E /* FrequentTerm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrequentTerm.h; sourceTree = "<group>"; };
+		49C008D1180AF9420033C16E /* FrequentTerm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrequentTerm.m; sourceTree = "<group>"; };
+		49C008D5180AFAD30033C16E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		49C008D7180AFADB0033C16E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		49C008D9180AFAE50033C16E /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		49C008DB180AFAEB0033C16E /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		49C008E0180AFEDC0033C16E /* HVMasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HVMasterViewController.h; sourceTree = "<group>"; };
+		49C008E1180AFEDC0033C16E /* HVMasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HVMasterViewController.m; sourceTree = "<group>"; };
+		49C008E8180C2A9C0033C16E /* FrequentTermsDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrequentTermsDataController.h; sourceTree = "<group>"; };
+		49C008E9180C2A9C0033C16E /* FrequentTermsDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrequentTermsDataController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,16 +73,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49C008DC180AFAEB0033C16E /* AdSupport.framework in Frameworks */,
+				49C008DA180AFAE50033C16E /* AudioToolbox.framework in Frameworks */,
+				49C008D8180AFADB0033C16E /* SystemConfiguration.framework in Frameworks */,
+				49C008D6180AFAD30033C16E /* QuartzCore.framework in Frameworks */,
 				49C0089E180AF1AB0033C16E /* UIKit.framework in Frameworks */,
 				49C008A0180AF1AB0033C16E /* Foundation.framework in Frameworks */,
 				49C008A2180AF1AB0033C16E /* CoreGraphics.framework in Frameworks */,
 				49C008A4180AF1AB0033C16E /* CoreData.framework in Frameworks */,
+				49C008CC180AF3200033C16E /* iflyMSC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		498E809A1812EA6000A2F06C /* models */ = {
+			isa = PBXGroup;
+			children = (
+				498E809B1812EA9600A2F06C /* FrequentTermModel.h */,
+				498E809C1812EA9600A2F06C /* FrequentTermModel.m */,
+			);
+			name = models;
+			sourceTree = "<group>";
+		};
 		49C00891180AF1AB0033C16E = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +117,11 @@
 		49C0089C180AF1AB0033C16E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				49C008DB180AFAEB0033C16E /* AdSupport.framework */,
+				49C008D9180AFAE50033C16E /* AudioToolbox.framework */,
+				49C008D7180AFADB0033C16E /* SystemConfiguration.framework */,
+				49C008D5180AFAD30033C16E /* QuartzCore.framework */,
+				49C008CB180AF3200033C16E /* iflyMSC.framework */,
 				49C0089D180AF1AB0033C16E /* UIKit.framework */,
 				49C0089F180AF1AB0033C16E /* Foundation.framework */,
 				49C008A1180AF1AB0033C16E /* CoreGraphics.framework */,
@@ -92,13 +133,13 @@
 		49C008A5180AF1AB0033C16E /* HeartVoice */ = {
 			isa = PBXGroup;
 			children = (
+				49C008E7180C29320033C16E /* entities */,
+				498E809A1812EA6000A2F06C /* models */,
+				49C008D4180AF9560033C16E /* data-controllers */,
+				49C008D3180AF9490033C16E /* view-controllers */,
 				49C008AE180AF1AB0033C16E /* HVAppDelegate.h */,
 				49C008AF180AF1AB0033C16E /* HVAppDelegate.m */,
 				49C008B7180AF1AB0033C16E /* MainStoryboard.storyboard */,
-				49C008BD180AF1AB0033C16E /* HVMasterViewController.h */,
-				49C008BE180AF1AB0033C16E /* HVMasterViewController.m */,
-				49C008C0180AF1AB0033C16E /* HVDetailViewController.h */,
-				49C008C1180AF1AB0033C16E /* HVDetailViewController.m */,
 				49C008BA180AF1AB0033C16E /* HeartVoice.xcdatamodeld */,
 				49C008A6180AF1AB0033C16E /* Supporting Files */,
 			);
@@ -117,6 +158,37 @@
 				49C008B5180AF1AB0033C16E /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		49C008D3180AF9490033C16E /* view-controllers */ = {
+			isa = PBXGroup;
+			children = (
+				49C008C8180AF24F0033C16E /* HVRootViewController.h */,
+				49C008C9180AF24F0033C16E /* HVRootViewController.m */,
+				49C008E0180AFEDC0033C16E /* HVMasterViewController.h */,
+				49C008E1180AFEDC0033C16E /* HVMasterViewController.m */,
+				498E809E18138B7E00A2F06C /* HVAddTermViewController.h */,
+				498E809F18138B7E00A2F06C /* HVAddTermViewController.m */,
+			);
+			name = "view-controllers";
+			sourceTree = "<group>";
+		};
+		49C008D4180AF9560033C16E /* data-controllers */ = {
+			isa = PBXGroup;
+			children = (
+				49C008E8180C2A9C0033C16E /* FrequentTermsDataController.h */,
+				49C008E9180C2A9C0033C16E /* FrequentTermsDataController.m */,
+			);
+			name = "data-controllers";
+			sourceTree = "<group>";
+		};
+		49C008E7180C29320033C16E /* entities */ = {
+			isa = PBXGroup;
+			children = (
+				49C008D0180AF9420033C16E /* FrequentTerm.h */,
+				49C008D1180AF9420033C16E /* FrequentTerm.m */,
+			);
+			name = entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,8 +261,12 @@
 				49C008AC180AF1AB0033C16E /* main.m in Sources */,
 				49C008B0180AF1AB0033C16E /* HVAppDelegate.m in Sources */,
 				49C008BC180AF1AB0033C16E /* HeartVoice.xcdatamodeld in Sources */,
-				49C008BF180AF1AB0033C16E /* HVMasterViewController.m in Sources */,
-				49C008C2180AF1AB0033C16E /* HVDetailViewController.m in Sources */,
+				49C008CA180AF24F0033C16E /* HVRootViewController.m in Sources */,
+				49C008D2180AF9420033C16E /* FrequentTerm.m in Sources */,
+				49C008E2180AFEDC0033C16E /* HVMasterViewController.m in Sources */,
+				49C008EA180C2A9C0033C16E /* FrequentTermsDataController.m in Sources */,
+				498E809D1812EA9600A2F06C /* FrequentTermModel.m in Sources */,
+				498E80A018138B7E00A2F06C /* HVAddTermViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +351,10 @@
 		49C008C6180AF1AB0033C16E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../Documents/ios/讯飞 有UI/lib\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HeartVoice/HeartVoice-Prefix.pch";
 				INFOPLIST_FILE = "HeartVoice/HeartVoice-Info.plist";
@@ -286,6 +366,10 @@
 		49C008C7180AF1AB0033C16E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../Documents/ios/讯飞 有UI/lib\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HeartVoice/HeartVoice-Prefix.pch";
 				INFOPLIST_FILE = "HeartVoice/HeartVoice-Info.plist";
@@ -313,6 +397,7 @@
 				49C008C7180AF1AB0033C16E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
