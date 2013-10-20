@@ -9,6 +9,7 @@
 #import "HVAppDelegate.h"
 
 #import "HVRootViewController.h"
+#import "FrequentTerm.h"
 
 @implementation HVAppDelegate
 
@@ -22,6 +23,7 @@
     UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
     HVRootViewController *controller = (HVRootViewController *)navigationController.topViewController;
     controller.managedObjectContext = self.managedObjectContext;
+        
     return YES;
 }
 							

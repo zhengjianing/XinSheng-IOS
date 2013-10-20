@@ -8,6 +8,7 @@
 
 #import "HVRootViewController.h"
 #import <QuartzCore/QuartzCore.h>
+#import "HVMasterViewController.h"
 
 @interface HVRootViewController ()
 @property (weak, nonatomic) IBOutlet UITextView *inputTextView;
@@ -32,11 +33,10 @@
     [self.view addSubview:self.inputTextView];
 }
 
-// hide keyboard by touch screen
 - (IBAction)rootViewTouchDown:(id)sender {
     [[UIApplication sharedApplication] sendAction:@selector(resignFirstResponder) to:nil from:nil forEvent:nil];
 }
-// hide keyboard by click return button
+
 -(BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString*)text
 {
     if ([text isEqualToString:@"\n"]) {
@@ -62,16 +62,9 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if([segue.identifier isEqualToString:@"frequentTermsSegue"]) {
-        NSMutableArray *temp = [[NSMutableArray alloc] init];
-        NSMutableDictionary *term=[[NSMutableDictionary alloc] init];
-        [term setObject:@"hello1122" forKey:@"term"];
-        [term setObject:@"greeting11" forKey:@"type"];
-        [temp addObject:term];
-        
-        [segue.destinationViewController setTerms:temp];
+        [segue.destinationViewController setManagedObjectContext:self.managedObjectContext];
     }
 }
-
 
 // IFlySynthesizerViewDelegate
 - (void) onBufferProress:(IFlySynthesizerView *)iFlySynthesizerView progress:(int)progress

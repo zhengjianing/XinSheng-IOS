@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FrequentTermsDataController.h"
 
 @interface HVMasterViewController : UITableViewController<UITableViewDelegate, UITableViewDataSource>
-@property (nonatomic, strong) NSArray *terms;
-@property (nonatomic,strong) NSManagedObjectContext* managedObjectContext;
+
+@property (strong, nonatomic) FrequentTermsDataController *dataController;
+@property (nonatomic,strong) NSManagedObjectContext *managedObjectContext;
 
 @end

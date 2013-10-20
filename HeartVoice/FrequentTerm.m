@@ -8,7 +8,6 @@
 
 #import "FrequentTerm.h"
 
-
 @implementation FrequentTerm
 
 @dynamic content;

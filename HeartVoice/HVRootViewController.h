@@ -21,7 +21,7 @@
     IFlyRecognizerView *iFlyRecognizerView;
     
 }
-@property (nonatomic,strong) NSManagedObjectContext* managedObjectContext;
+@property (nonatomic,strong) NSManagedObjectContext *managedObjectContext;
 - (IBAction)rootViewTouchDown:(id)sender;
 
 @end

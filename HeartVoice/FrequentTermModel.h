@@ -1,17 +1,18 @@
 //
-//  FrequentTerm.h
+//  FrequentTermModel.h
 //  HeartVoice
 //
-//  Created by jianing on 10/13/13.
+//  Created by jianing on 10/20/13.
 //  Copyright (c) 2013 jianing. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
-#import <CoreData/CoreData.h>
 
-@interface FrequentTerm : NSManagedObject
+@interface FrequentTermModel : NSObject
 
 @property (nonatomic, retain) NSString *content;
 @property (nonatomic, retain) NSString *type;
+
+-(id)initWithContent:(NSString *)content type:(NSString *)type;
 
 @end
